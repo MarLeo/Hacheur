@@ -55,7 +55,7 @@ namespace HacheurTest
 		unsigned int nonce = 2;
 
 		Bloc bloc = *new Bloc(1, nonce, &tx, &txm, tab5, tab4);
-		std::string verification = "c451caf43068ec6b8500c0e8227a4efc14956a70f801a5a58ba226fcd740dabc";
+		std::string verification = "25aa10f60a8a18bd13655bd819d2f5396eb36797a51715319814aa01a4917f0a";
 
 		std::string value_to_hash = Hash::Hash::blocToString(bloc);
 

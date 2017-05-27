@@ -21,46 +21,53 @@ namespace Hash
 	std::string Hash::blocToString(Bloc bloc)
 	{
 		return std::string(
-			"previous_hash:" + charToString(bloc.previous_hash, 64) + "," +
-			"nonce:" + std::to_string(bloc.nonce) + "," +
-			"num:" + std::to_string(bloc.num) + "," +
-			"tx1:{" +
-			"txi[0]:{" +
-			"nBloc:" + std::to_string(bloc.tx1.txi[0].nBloc) + "," +
-			"nTx:" + std::to_string(bloc.tx1.txi[0].nTx) + "," +
-			"nUtxo:" + std::to_string(bloc.tx1.txi[0].nUtxo) + "," +
-			"signature:" + charToString(bloc.tx1.txi[0].signature, 64) + "}," +
-			"txi[1]:{" +
-			"nBloc:" + std::to_string(bloc.tx1.txi[1].nBloc) + "," +
-			"nTx:" + std::to_string(bloc.tx1.txi[1].nTx) + "," +
-			"nUtxo:" + std::to_string(bloc.tx1.txi[1].nUtxo) + "," +
-			"signature:" + charToString(bloc.tx1.txi[1].signature, 64) + "}," +
-			"txi[2]:{" +
-			"nBloc:" + std::to_string(bloc.tx1.txi[2].nBloc) + "," +
-			"nTx:" + std::to_string(bloc.tx1.txi[2].nTx) + "," +
-			"nUtxo:" + std::to_string(bloc.tx1.txi[2].nUtxo) + "," +
-			"signature:" + charToString(bloc.tx1.txi[2].signature, 64) + "}," +
-			"txi[3]:{" +
-			"nBloc:" + std::to_string(bloc.tx1.txi[3].nBloc) + "," +
-			"nTx:" + std::to_string(bloc.tx1.txi[3].nTx) + "," +
-			"nUtxo:" + std::to_string(bloc.tx1.txi[3].nUtxo) + "," +
-			"signature:" + charToString(bloc.tx1.txi[3].signature, 64) + "}," +
-			"utxo[0]:{" +
-			"montant:" + std::to_string(bloc.tx1.utxo[0].montant) + "," +
-			"dest:" + charToString(bloc.tx1.utxo[0].dest, 4) + "," +
-			"hash:" + charToString(bloc.tx1.utxo[0].hash, 64) + "}," +
-			"utxo[1]:{" +
-			"montant:" + std::to_string(bloc.tx1.utxo[1].montant) + "," +
-			"dest:" + charToString(bloc.tx1.utxo[1].dest, 4) + "," +
-			"hash:" + charToString(bloc.tx1.utxo[1].hash, 64) + "}" +
-			"}," +
-			"tx0:{" +
-			"utxo[0]:{" +
-			"montant:" + std::to_string(bloc.tx0.utxo[0].montant) + "," +
-			"dest:" + charToString(bloc.tx0.utxo[0].dest, 4) + "," +
-			"hash:" + charToString(bloc.tx0.utxo[0].hash, 64) + "}" +
-			"}" +
-			"}"
+			"{ \n"
+			"	" "previous_hash:" + charToString(bloc.previous_hash, 64) + ", \n" +
+			"	" "nonce:" + std::to_string(bloc.nonce) + ", \n" +
+			"	" "num:" + std::to_string(bloc.num) + ", \n" +
+			"	" "tx1: { \n" +
+			"		"	"txi[0]: \n" +
+			"		" "{ \n" +
+			"			"	"nBloc:" + std::to_string(bloc.tx1.txi[0].nBloc) + ", \n" +
+			"			"	"nTx:" + std::to_string(bloc.tx1.txi[0].nTx) + ", \n" +
+			"			"	"nUtxo:" + std::to_string(bloc.tx1.txi[0].nUtxo) + ", \n" +
+			"			"	"signature:" + charToString(bloc.tx1.txi[0].signature, 64) + "\n" + "	        }, \n" +
+			"		"	"txi[1]: \n" +
+			"		" "{ \n" +
+			"			"	"nBloc:" + std::to_string(bloc.tx1.txi[1].nBloc) + ", \n" +
+			"			"	"nTx:" + std::to_string(bloc.tx1.txi[1].nTx) + ", \n" +
+			"			"	"nUtxo:" + std::to_string(bloc.tx1.txi[1].nUtxo) + ", \n" +
+			"			"	"signature:" + charToString(bloc.tx1.txi[1].signature, 64) + "\n" + "	        }, \n" +
+			"		"	"txi[2]: \n" +
+			"		" "{ \n" +
+			"			"	"nBloc:" + std::to_string(bloc.tx1.txi[2].nBloc) + ", \n" +
+			"			"	"nTx:" + std::to_string(bloc.tx1.txi[2].nTx) + ", \n" +
+			"			"	"nUtxo:" + std::to_string(bloc.tx1.txi[2].nUtxo) + ", \n" +
+			"			"	"signature:" + charToString(bloc.tx1.txi[2].signature, 64) + "\n" + "	        }, \n" +
+			"		"	"txi[3]: \n" +
+			"		" "{ \n" +
+			"			"   "nBloc:" + std::to_string(bloc.tx1.txi[3].nBloc) + ", \n" +
+			"			"	"nTx:" + std::to_string(bloc.tx1.txi[3].nTx) + ", \n" +
+			"			"	"nUtxo:" + std::to_string(bloc.tx1.txi[3].nUtxo) + ", \n" +
+			"			"	"signature:" + charToString(bloc.tx1.txi[3].signature, 64) + "\n" + "	        }, \n" +
+			"		"	"utxo[0]: \n" +
+			"		" "{ \n" +
+			"			"  "montant:" + std::to_string(bloc.tx1.utxo[0].montant) + ", \n" +
+			"			"  "dest:" + charToString(bloc.tx1.utxo[0].dest, 4) + ", \n" +
+			"			"  "hash:" + charToString(bloc.tx1.utxo[0].hash, 64) + "\n" + "	        }, \n" +
+			"		"	"utxo[1]: \n" +
+			"		" "{ \n" +
+			"			"  "montant:" + std::to_string(bloc.tx1.utxo[1].montant) + ", \n" +
+			"			"  "dest:" + charToString(bloc.tx1.utxo[1].dest, 4) + ", \n" +
+			"			"  "hash:" + charToString(bloc.tx1.utxo[1].hash, 64) + "\n" + "	        }, \n" +
+			"	" "tx0: { \n" +
+			"		"	"utxo[0]: \n" +
+			"		" "{ \n" +
+			"			"	"montant:" + std::to_string(bloc.tx0.utxo[0].montant) + ", \n" +
+			"			"	"dest:" + charToString(bloc.tx0.utxo[0].dest, 4) + ", \n" +
+			"			"	"hash:" + charToString(bloc.tx0.utxo[0].hash, 64) + "\n" + "	        }, \n" +
+			"	   " " }" +
+			"\n }"
 		);
 	}
 
