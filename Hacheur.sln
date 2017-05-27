@@ -5,10 +5,7 @@ VisualStudioVersion = 15.0.26228.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Hacheur", "Hacheur\Hacheur.vcxproj", "{734A77BC-070F-44F4-98D6-148F0AD248D2}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HacheurUnitTest", "HacheurUnitTest\HacheurUnitTest.vcxproj", "{25ACB8A5-6584-45FF-A66E-8C106E66AE07}"
-	ProjectSection(ProjectDependencies) = postProject
-		{734A77BC-070F-44F4-98D6-148F0AD248D2} = {734A77BC-070F-44F4-98D6-148F0AD248D2}
-	EndProjectSection
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HacheurTest", "HacheurTest\HacheurTest.vcxproj", "{CF8CF7C9-799E-4D2A-9232-03883861A8E9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,14 +23,14 @@ Global
 		{734A77BC-070F-44F4-98D6-148F0AD248D2}.Release|x64.Build.0 = Release|x64
 		{734A77BC-070F-44F4-98D6-148F0AD248D2}.Release|x86.ActiveCfg = Release|Win32
 		{734A77BC-070F-44F4-98D6-148F0AD248D2}.Release|x86.Build.0 = Release|Win32
-		{25ACB8A5-6584-45FF-A66E-8C106E66AE07}.Debug|x64.ActiveCfg = Debug|x64
-		{25ACB8A5-6584-45FF-A66E-8C106E66AE07}.Debug|x64.Build.0 = Debug|x64
-		{25ACB8A5-6584-45FF-A66E-8C106E66AE07}.Debug|x86.ActiveCfg = Debug|Win32
-		{25ACB8A5-6584-45FF-A66E-8C106E66AE07}.Debug|x86.Build.0 = Debug|Win32
-		{25ACB8A5-6584-45FF-A66E-8C106E66AE07}.Release|x64.ActiveCfg = Release|x64
-		{25ACB8A5-6584-45FF-A66E-8C106E66AE07}.Release|x64.Build.0 = Release|x64
-		{25ACB8A5-6584-45FF-A66E-8C106E66AE07}.Release|x86.ActiveCfg = Release|Win32
-		{25ACB8A5-6584-45FF-A66E-8C106E66AE07}.Release|x86.Build.0 = Release|Win32
+		{CF8CF7C9-799E-4D2A-9232-03883861A8E9}.Debug|x64.ActiveCfg = Debug|x64
+		{CF8CF7C9-799E-4D2A-9232-03883861A8E9}.Debug|x64.Build.0 = Debug|x64
+		{CF8CF7C9-799E-4D2A-9232-03883861A8E9}.Debug|x86.ActiveCfg = Debug|Win32
+		{CF8CF7C9-799E-4D2A-9232-03883861A8E9}.Debug|x86.Build.0 = Debug|Win32
+		{CF8CF7C9-799E-4D2A-9232-03883861A8E9}.Release|x64.ActiveCfg = Release|x64
+		{CF8CF7C9-799E-4D2A-9232-03883861A8E9}.Release|x64.Build.0 = Release|x64
+		{CF8CF7C9-799E-4D2A-9232-03883861A8E9}.Release|x86.ActiveCfg = Release|Win32
+		{CF8CF7C9-799E-4D2A-9232-03883861A8E9}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

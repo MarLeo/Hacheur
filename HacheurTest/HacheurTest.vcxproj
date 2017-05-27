@@ -20,9 +20,9 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{25ACB8A5-6584-45FF-A66E-8C106E66AE07}</ProjectGuid>
+    <ProjectGuid>{CF8CF7C9-799E-4D2A-9232-03883861A8E9}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>HacheurUnitTest</RootNamespace>
+    <RootNamespace>HacheurTest</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.14393.0</WindowsTargetPlatformVersion>
     <ProjectSubType>NativeUnitTestProject</ProjectSubType>
   </PropertyGroup>
@@ -94,12 +94,9 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <UseFullPaths>true</UseFullPaths>
-      <AdditionalIncludeDirectories>C:\Users\marti\Source\Repos\Hacheur\Debug;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
-      <AdditionalDependencies>C:\Users\marti\Source\Repos\Hacheur\Debug\Hacheur.lib;C:\Users\marti\Source\Repos\Hacheur\Debug\Hacheur.dll;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>C:\Users\marti\Source\Repos\Hacheur\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -147,16 +144,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\Hacheur\Bloc.h" />
-    <ClInclude Include="..\Hacheur\Hacheur.h" />
-    <ClInclude Include="..\Hacheur\Sha256.h" />
+    <ClInclude Include="Bloc.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\Hacheur\Bloc.cpp" />
-    <ClCompile Include="..\Hacheur\Hacheur.cpp" />
-    <ClCompile Include="..\Hacheur\Sha256.cpp" />
+    <ClCompile Include="Bloc.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>

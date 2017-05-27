@@ -1,4 +1,6 @@
 #pragma once
+
+
 // //////////////////////////////////////////////////////////
 // sha256.h
 // Copyright (c) 2014,2015 Stephan Brumme. All rights reserved.
