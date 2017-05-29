@@ -1,6 +1,6 @@
 #include "stdafx.h"
 #include "CppUnitTest.h"
-#include "..\Hacheur\Hacheur.h"
+#include "..\Hacheur\Hasheur.h"
 #include<iostream>
 
 
